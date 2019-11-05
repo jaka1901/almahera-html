@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Almahera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<title>Almahera</title>
+	<link rel="preload" as="style" href="lib/css/preload.css">
+	<link rel="preload" as="script" href="lib/js/modernizr-custom.js">
+	<link rel="preload" as="script" href="lib/js/jquery-3.3.1.min.js">
+	<link rel="preload" as="script" href="lib/js/preload.js">
+
+	<link rel="icon" href="lib/img/logo/logo-80.png">
+	<link rel="stylesheet" type="text/css" href="lib/css/preload.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/core.css">
+
+	<script type="text/javascript" src="lib/js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="lib/js/preload.js"></script>
+
+</head>
+<body class="ov-h">
+
+	<div id="preload">
+		<div>
+			<img src="lib/img/logo/logo-200.png">
+		</div>
+		<small>
+			<span>Sedang memuat..</span>
+		</small>
+	</div>
+
+<nav class="navbar navbar-expand-lg navbar-core" data-aos="fade-down">
+	<div class="container">
+		<a class="navbar-brand" href="index.html"></a>
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarAtap" aria-controls="navbarAtap" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+	  <div class="collapse navbar-collapse" id="navbarAtap">
+	    <ul class="navbar-nav ml-md-auto mr-md-0 ml-auto mr-auto">
+	      <!-- <li class="nav-item">
+	        <a class="nav-link" href="#">Produk</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Tentang Kami</a>
+	      </li> -->
+	    	<li class="nav-item mt-4 mt-md-0 ml-0 ml-md-3">
+	    		<a href="daftar.html" class="btn btn-primary rounded-pill border-0 text-white">Berlangganan</a>
+	    	</li>
+	    </ul>
+	  </div>
+	</div>
+</nav>
+
+<div class="headline">
+	<div class="text-content">
+		<div class="row w-100 mx-auto">
+			<div class="col-12">
+				<h1 class="mb-5 text-white normal text-uppercase" data-aos="fade-bottom" data-aos-delay="600">Daftar pelanggan</h1>
+			</div>
+			<div class="col-12">
+				<form method="get" id="chatus" data-aos="fade-bottom" data-aos-delay="800">
+
+				  <div class="swiper-container" id="daftar">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+						<div class="form-group mb-3">
+							<label class="d-block">Nama Lengkap</label>
+							<input autocomplete="off" class="form-control" type="text" id="nama" required>
+						</div>
+
+						<div class="float-right">
+							<button type="button" disabled="" id="namaNext" class="btn text-white btn-lg mt-3 btn-light text-dark"><span class="d-none d-md-inline-block">Selanjutnya</span> <i class="lnr lnr-arrow-right"></i> </button>
+						</div>
+				      </div>
+				      <div class="swiper-slide">
+						<div class="form-group mb-3">
+							<label class="d-block">Nomor HP</label>
+							<input autocomplete="off" class="form-control" type="number" min="0" required id="nohp">
+						</div>
+
+						<div class="float-right">
+							<button type="button" class="clickPrev btn text-white btn-lg mt-3 btn-light text-dark"><i class="lnr lnr-arrow-left"></i> <span class="d-none d-md-inline-block">Sebelumnya</span></button>
+							<button type="button" disabled="" id="HPNext" class="btn text-white btn-lg mt-3 btn-light text-dark"><span class="d-none d-md-inline-block">Selanjutnya</span> <i class="lnr lnr-arrow-right"></i></button>
+						</div>
+				      </div>
+				      <div class="swiper-slide">
+						<div class="form-group mb-3">
+							<label class="d-block">Alamat</label>
+							<textarea class="form-control" required id="alamat" rows="2"></textarea>
+						</div>
+
+						<div class="float-right">
+							<button type="button" class="clickPrev btn text-white btn-lg mt-3 btn-light text-dark"><i class="lnr lnr-arrow-left"></i> <span class="d-none d-md-inline-block">Sebelumnya</span></button>
+							<button type="submit" disabled id="alamatNext" class="btn text-white btn-lg mt-3 btn-light text-dark"><span class="d-none d-md-inline-block">Kirim</span> <i class="lnr lnr-checkmark-circle"></i></button>
+						</div>
+				      </div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				  </div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="content pb-3" data-aos="fade-bottom" data-aos-delay="400">
+			<div class="row align-items-center justify-content-center text-center">
+				<div class="col-12">
+					<img src="lib/img/logo/logo-600.png" class="mb-4" width="250">
+
+					<div class="py-4 mb-5 px-md-0 px-2">
+						<div class="d-block d-md-flex align-items-center justify-content-center text-center">
+							<h4 class="px-md-4 px-1 py-md-2 py-1 light d-flex ">
+								<span class="icon-whatsapp mr-4 mr-md-2 text-success"></span>
+								<a target="_blank" href="https://api.whatsapp.com/send?phone=6281285269658" class="text-dark">+62812 8526 9658</a>
+							</h4>
+							<h4 class="px-md-4 px-1 py-md-2 py-1 light d-flex ">
+								<span class="icon-phone mr-4 mr-md-2 text-warning"></span>
+								<a href="tel:+62251998999" class="text-dark">+62251 998 999</a>
+							</h4>
+							<h4 class="px-md-4 px-1 py-md-2 py-1 light d-flex ">
+								<span class="icon-mail2 mr-4 mr-md-2 text-danger d-inline-block" style="transform: scaleX(1.3);"></span>
+								<a href="mailto:help@almahera.com" class="text-dark">help@almahera.com</a>
+							</h4>
+						</div>
+					</div>
+
+				</div>
+			</div><!-- /.row -->
+			<div class="row align-items-center">
+				<div class="col-md-8 text-center text-md-left">
+					<h5 class="normal m-0" style="letter-spacing: 1px;">2019 © All Rights Reserved by Almahera</h5>
+				</div>
+				<div class="col-md-4">
+					<div class="sosmed-wrap">
+						<a href="#"><span class="icon-facebook"></span></a>
+						<a href="#"><span class="icon-twitter"></span></a>
+						<a href="#"><span class="icon-instagram"></span></a>
+						<a href="#"><span class="icon-linkedin2"></span></a>
+					</div>
+				</div>
+				<!-- <div class="col-md-8 text-center text-md-right">
+					<a href="#" class="float-none text-dark clickToTop"><span class="lnr lnr-arrow-up-circle text-white "></span></a>
+				</div> -->
+			</div><!-- /.row -->
+		</div><!-- /.content -->
+	</div><!-- /.container -->
+</div><!-- /.footer -->
+
+	<!-- <script type="text/javascript" src="lib/js/popper.min.js"></script> -->
+	<script type="text/javascript" src="lib/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="lib/js/swiper.min.js"></script>
+	<script type="text/javascript" src="lib/js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="lib/js/jquery.paroller.min.js"></script>
+	<script type="text/javascript" src="lib/js/aos.js"></script>
+	<script type="text/javascript" src="lib/js/core.js"></script>
+
+</body>
+</html>

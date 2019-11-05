@@ -1,0 +1,78 @@
+@keyframes slideDown{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes slideUp{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+}
+
+.slideIn {
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+.slideDown {
+  animation-name: slideDown;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+.slideOut {
+  animation-name: slideOut;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}

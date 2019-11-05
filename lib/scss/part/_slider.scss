@@ -1,0 +1,57 @@
+.testi-wrap{
+	position: relative;
+	background-size: red;
+
+	.swiper-container{
+		&#testi{
+			margin-top: 30px;
+
+			.swiper-wrapper{}
+
+			.swiper-slide{
+				width: calc((100% / 3));
+				padding: 20px 40px;
+			}
+		}
+	}
+	.nav-control{
+		.control-pagination{
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    margin: 60px 0 20px;
+
+		    .swiper-pagination-bullet{
+		    	outline: none;
+		    	width: 18px;
+		    	height: 18px;
+		    	opacity: 1 !important;
+		    	background: $grey;
+		    	margin-right: 20px;
+		    	transition: .3s ease;
+
+		    	&-active{
+		    		background: darken($grey, 70%);
+		    		transform: scale(1.1);
+		    	}
+
+		    	&:last-child{
+		    		margin-right: 0;
+		    	}
+		    }
+		}
+	}
+}
+
+#daftar{
+	.swiper-pagination{
+	    width: unset;
+	    position: absolute;
+	    transform: scale(1.5);
+	    left: 15px;
+	    background: white;
+	    padding: 5px 10px;
+	    font-weight: bold;
+	    bottom: 8px;
+	}
+}

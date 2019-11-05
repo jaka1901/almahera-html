@@ -1,0 +1,45 @@
+#chatus{
+	width: 100%;
+
+	*{
+		border-radius: 0;
+		outline: none;
+		box-shadow: none;
+	}
+
+	.btn{
+		font-weight: bold !important;
+		margin-left: 15px;
+	}
+	.lnr{
+	    position: relative !important;
+	    top: 2px !important;
+	}
+
+	.form-group{
+		width: 100%;
+
+		label{
+			font-size: 30px;
+			color: white;
+		}
+		.form-control{
+			font-size: 40px;
+			padding: 15px 20px;
+			border-radius: 0;
+		}
+		textarea{
+			resize: none;
+		}
+
+		@include media-breakpoint-down(xs) {
+			label{
+				font-size: 25px;
+			}
+			.form-control{
+				font-size: 30px;
+			}
+		}
+
+	}
+}
